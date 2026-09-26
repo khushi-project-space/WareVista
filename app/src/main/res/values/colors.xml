@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Theme -->
+    <color name="primary">#43A047</color>
+    <color name="primary_dark">#2E7D32</color>
+    <color name="primary_light">#A5D6A7</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#66BB6A</color>
+    <color name="secondary_light">#C8E6C9</color>
+
+    <!-- Background -->
+    <color name="background">#F5F7F5</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Card -->
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Status -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FB8C00</color>
+    <color name="error">#E53935</color>
+
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<resources>-->
+
+    <!--    <color name="primary">#2E7D32</color>-->
+    <!--    <color name="primary_dark">#1B5E20</color>-->
+
+    <!--    <color name="accent">#FF9800</color>-->
+
+    <!--    <color name="white">#FFFFFF</color>-->
+
+    <!--    <color name="black">#000000</color>-->
+
+    <!--</resources>-->

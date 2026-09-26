@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#DDEFE5">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+
+        <!-- ===================================================== -->
+        <!-- HEADER CARD -->
+        <!-- ===================================================== -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#145A32">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="12dp">
+
+
+                <!-- ADMIN ANIMATION -->
+
+                <LinearLayout
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieAdmin"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/warehouse"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/languageCard"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="1dp"
+                        app:cardBackgroundColor="#2E7D32"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#81C784">
+
+                        <Spinner
+                            android:id="@+id/spinnerLanguage"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:paddingStart="7dp"
+                            android:paddingEnd="2dp"
+                            android:entries="@array/language_options"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+                <!-- HEADER TEXT -->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="15dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="WareVista"
+
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="26sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="6dp"
+
+                        android:text="@string/admin_dashboard"
+
+                        android:textColor="#D8F3E3"
+
+                        android:textSize="15sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+
+                        android:text="@string/manage_warehouse_system"
+
+                        android:textColor="#D8F3E3"
+
+                        android:textSize="13sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ===================================================== -->
+        <!-- WELCOME -->
+        <!-- ===================================================== -->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:layout_marginBottom="14dp"-->
+
+<!--            android:text="Welcome, Admin 👋"-->
+
+<!--            android:textColor="#145A32"-->
+
+<!--            android:textSize="22sp"-->
+
+<!--            android:textStyle="bold"/>-->
+
+        <!-- ===================================================== -->
+        <!-- CURRENT SUBSCRIPTION BAR -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCurrentSubscription"
+
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+
+            android:layout_marginBottom="18dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="#263238"
+            app:strokeColor="#455A64"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:paddingStart="16dp"
+                android:paddingEnd="14dp">
+
+
+                <!-- PLAN ICON -->
+
+                <TextView
+                    android:id="@+id/txtSubscriptionIcon"
+
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:gravity="center"
+
+
+
+                    android:text=" "
+
+                    android:textSize="26sp"/>
+
+
+                <!-- PLAN INFORMATION -->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="12dp"
+
+                    android:orientation="vertical">
+
+
+                    <!-- PLAN + STATUS -->
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+
+                        android:gravity="center_vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtSubscriptionPlan"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text=" "
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/txtSubscriptionStatus"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="8dp"
+
+                            android:text=" "
+
+                            android:textColor="#81C784"
+
+                            android:textSize="11sp"
+
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <!-- DURATION -->
+
+                    <TextView
+                        android:id="@+id/txtSubscriptionDuration"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+
+                        android:text=" "
+
+                        android:textColor="#CFD8DC"
+
+                        android:textSize="12sp"/>
+
+
+                </LinearLayout>
+
+
+                <!-- WAREHOUSE COUNT -->
+
+                <TextView
+                    android:id="@+id/txtSubscriptionWarehouse"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+
+                    android:text="🏢 Loading..."
+
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="13sp"
+
+                    android:textStyle="bold"/>
+
+
+                <!-- ARROW -->
+
+                <TextView
+                    android:id="@+id/txtSubscriptionArrow"
+
+                    android:layout_width="26dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginStart="4dp"
+
+                    android:gravity="center"
+
+                    android:text="›"
+
+                    android:textColor="#B0BEC5"
+
+                    android:textSize="26sp"
+
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ===================================================== -->
+        <!-- CREATE WAREHOUSE -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCreateWarehouse"
+
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+
+            android:layout_marginBottom="14dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="#C8E6C9"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp">
+
+
+                <!-- ICON -->
+
+                <FrameLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp">
+
+                    <TextView
+                        android:id="@+id/txtCreateWarehouseIcon"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:gravity="center"
+                        android:text="🏢"
+                        android:textSize="48sp"/>
+
+                    <TextView
+                        android:id="@+id/txtCreateWarehouseLock"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom|end"
+                        android:gravity="center"
+                        android:text="🔒"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+
+
+                <!-- TEXT -->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtCreateWarehouseTitle"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/create_warehouse"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="4dp"
+
+                        android:text="@string/create_warehouse_staff"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <!-- ===================================================== -->
+        <!-- MANAGE STAFF -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardManageStaff"
+
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+
+            android:layout_marginBottom="14dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="#B2DFDB"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp">
+
+
+                <!-- ICON -->
+
+                <TextView
+
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+
+                    android:gravity="center"
+
+                    android:text="👥"
+
+                    android:textSize="48sp"/>
+
+
+                <!-- TEXT -->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/manage_staff"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="4dp"
+
+                        android:text="@string/view_manage_staff"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <!-- ===================================================== -->
+        <!-- SUBSCRIPTION -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSubscription"
+
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+
+            android:layout_marginBottom="14dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="#FFF3CD"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp">
+
+
+                <!-- ICON -->
+
+                <TextView
+
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+
+                    android:gravity="center"
+
+                    android:text="💳"
+
+                    android:textSize="48sp"/>
+
+
+                <!-- TEXT -->
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/subscription"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="4dp"
+
+                        android:text="@string/manage_subscription"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- LOGOUT -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAdminLogout"
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="20dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="#F8BBD0"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/logout"/>
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/logout"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="4dp"
+
+                        android:text="@string/sign_out_securely"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <!-- ===================================================== -->
+        <!-- FOOTER -->
+        <!-- ===================================================== -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="15dp"
+
+            android:text="@string/warevista_footer"
+
+            android:textColor="#557064"
+
+            android:textSize="13sp"
+
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+    <!-- AI AGENT BUTTON -->
+<com.google.android.material.card.MaterialCardView
+android:id="@+id/btnAskWareVista"
+android:layout_width="72dp"
+android:layout_height="72dp"
+android:layout_gravity="bottom|end"
+android:layout_marginEnd="20dp"
+android:layout_marginBottom="20dp"
+android:clickable="true"
+android:focusable="true"
+android:elevation="12dp"
+app:cardBackgroundColor="#145A32"
+app:cardCornerRadius="36dp"
+app:strokeWidth="0dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="🤖"
+    android:textSize="34sp" />
+
+</com.google.android.material.card.MaterialCardView>
+    </FrameLayout>

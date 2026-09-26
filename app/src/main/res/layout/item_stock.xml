@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+
+
+        <!-- CROP NAME -->
+
+        <TextView
+
+            android:id="@+id/txtCrop"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Wheat"
+
+            android:textSize="22sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#1B1B1B"/>
+
+
+
+
+        <!-- DETAILS ROW -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+
+                android:id="@+id/txtPurchased"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="📥 0 KG"
+
+                android:textSize="15sp"
+
+                android:textColor="#1565C0"/>
+
+
+
+            <TextView
+
+                android:id="@+id/txtSold"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="📤 0 KG"
+
+                android:textSize="15sp"
+
+                android:textColor="#2E7D32"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- AVAILABLE -->
+
+
+        <TextView
+
+            android:id="@+id/txtAvailable"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="📦 Available Stock : 0 KG"
+
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            android:layout_marginTop="12dp"
+
+            android:textColor="#F57C00"/>
+
+
+
+
+
+        <!-- PROGRESS -->
+
+
+        <ProgressBar
+
+            android:id="@+id/progressStock"
+
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="10dp"
+
+            android:layout_marginTop="14dp"
+
+            android:max="100"
+
+            android:progress="0"/>
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical"
+
+            android:layout_marginTop="10dp">
+
+
+
+            <TextView
+
+                android:id="@+id/txtPercent"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="0% Available"
+
+                android:textStyle="bold"
+
+                android:textSize="15sp"/>
+
+
+
+
+            <TextView
+
+                android:id="@+id/txtStatus"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Healthy"
+
+                android:textColor="#FFFFFF"
+
+                android:textStyle="bold"
+
+                android:paddingLeft="14dp"
+
+                android:paddingRight="14dp"
+
+                android:paddingTop="6dp"
+
+                android:paddingBottom="6dp"
+
+                android:background="#388E3C"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

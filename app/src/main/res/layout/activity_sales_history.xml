@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="#DDEFE5"
+    android:padding="16dp">
+
+
+        <!-- ================================================= -->
+        <!-- HEADER CARD -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="7dp"
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+
+                <ImageView
+
+                    android:id="@+id/btnBack"
+
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+
+                    android:padding="7dp"
+
+                    android:background="@drawable/back_button_bg"
+
+                    android:src="@drawable/ic_back"
+
+                    app:tint="#145A32"/>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:id="@+id/lottieHeader"
+
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+
+                    android:layout_marginStart="15dp"
+
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/sales"/>
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:text="Sales History"
+
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    android:textColor="#145A32"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- SEARCH CARD - ACTUAL -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/searchCard"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+
+                app:boxBackgroundMode="outline"
+
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+
+                app:boxStrokeColor="#145A32"
+
+                app:startIconDrawable="@drawable/ic_search">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etSearchHistory"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Enter Buyer Name"
+
+                    android:textColor="#212121"
+                    android:textColorHint="#616161"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- SEARCH ERROR -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/txtSearchError"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:textColor="#D32F2F"
+
+            android:textStyle="bold"
+
+            android:visibility="gone"/>
+
+
+
+        <!-- ================================================= -->
+        <!-- FILTER CARD - ACTUAL -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/filterCard"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:padding="12dp">
+
+
+                <Spinner
+
+                    android:id="@+id/spCropFilter"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:popupBackground="@drawable/spinner_bg"/>
+
+
+                <Space
+
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <Spinner
+
+                    android:id="@+id/spPaymentFilter"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:popupBackground="@drawable/spinner_bg"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- DATE CARD - ACTUAL -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/dateCard"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:padding="12dp">
+
+
+                <EditText
+
+                    android:id="@+id/etDateFilter"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:focusable="false"
+
+                    android:hint="📅 Select Date"
+
+                    android:padding="12dp"
+
+                    android:textColor="#212121"
+                    android:textColorHint="#616161"
+
+                    android:textStyle="bold"/>
+
+
+                <Button
+
+                    android:id="@+id/btnClearDate"
+
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+
+                    android:layout_marginStart="10dp"
+
+                    android:backgroundTint="#145A32"
+
+                    android:text="CLEAR"
+
+                    android:textAllCaps="true"
+
+                    android:textColor="#FFFFFF"
+
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- ================================================= -->
+        <!-- SKELETON SECTION -->
+        <!-- ================================================= -->
+        <!-- ================================================= -->
+
+
+
+        <!-- SEARCH SKELETON -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/skeletonSearch"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="18dp"
+
+            android:visibility="gone"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:layout_margin="12dp"
+
+                android:background="@drawable/skeleton_bg"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- DROPDOWN SKELETON -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:visibility="visible"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:padding="12dp">
+
+
+                <!-- CROP SKELETON -->
+
+                <View
+
+                    android:id="@+id/skeletonCrop"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/skeleton_bg"/>
+
+
+                <Space
+
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <!-- PAYMENT SKELETON -->
+
+                <View
+
+                    android:id="@+id/skeletonPayment"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/skeleton_bg"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- DATE SKELETON -->
+        <!-- ================================================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:padding="12dp">
+
+
+                <View
+
+                    android:id="@+id/skeletonDate"
+
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+
+                    android:layout_weight="1"
+
+                    android:background="@drawable/skeleton_bg"/>
+
+
+                <View
+
+                    android:id="@+id/skeletonClearDate"
+
+                    android:layout_width="90dp"
+                    android:layout_height="52dp"
+
+                    android:layout_marginStart="10dp"
+
+                    android:background="@drawable/skeleton_button"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ================================================= -->
+        <!-- HISTORY SKELETON CARDS -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+
+            android:id="@+id/skeletonHistoryContainer"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:layout_marginTop="18dp"
+
+            android:visibility="gone">
+
+
+
+            <!-- SKELETON CARD 1 -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+
+                    android:padding="16dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="22dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        android:layout_width="150dp"
+                        android:layout_height="28dp"
+
+                        android:layout_marginTop="15dp"
+
+                        android:background="@drawable/skeleton_bg"/>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_button"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- SKELETON CARD 2 -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+
+                    android:padding="16dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="22dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        android:layout_width="150dp"
+                        android:layout_height="28dp"
+
+                        android:layout_marginTop="15dp"
+
+                        android:background="@drawable/skeleton_bg"/>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_button"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- SKELETON CARD 3 -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+
+                    android:padding="16dp">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="22dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <View
+
+                        android:layout_width="150dp"
+                        android:layout_height="28dp"
+
+                        android:layout_marginTop="15dp"
+
+                        android:background="@drawable/skeleton_bg"/>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="18dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="100dp"
+                            android:layout_height="18dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="18dp"
+
+                        android:orientation="horizontal">
+
+
+                        <View
+
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+
+                            android:layout_weight="1"
+
+                            android:background="@drawable/skeleton_bg"/>
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+
+                            android:layout_marginStart="10dp"
+
+                            android:background="@drawable/skeleton_button"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+        <!-- ================================================= -->
+        <!-- ACTUAL RECYCLER VIEW -->
+        <!-- ================================================= -->
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerHistory"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        android:layout_marginTop="18dp"
+
+        android:nestedScrollingEnabled="true"/>
+
+
+    </LinearLayout>
+

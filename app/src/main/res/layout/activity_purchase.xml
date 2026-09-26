@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#DDEFE5"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="18dp"
+            app:cardBackgroundColor="#C8E6C9"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="18dp">
+
+                <!-- Back Button -->
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:padding="6dp"
+                    android:background="@drawable/back_button_bg"
+                    android:src="@drawable/ic_back"
+                    app:tint="#145A32"
+                    android:scaleType="centerInside"/>
+
+                <!-- Lottie -->
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieHeader"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="16dp"
+                    app:lottie_rawRes="@raw/purchase"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+
+                <!-- Title -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/purchase_title"
+                    android:textColor="#145A32"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.03"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- PURCHASE CARD -->
+
+
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:id="@+id/cardPurchase"-->
+
+<!--            android:layout_width="match_parent"-->
+
+<!--            android:layout_height="120dp"-->
+
+<!--            android:layout_marginBottom="14dp"-->
+
+<!--            app:cardCornerRadius="28dp"-->
+
+<!--            app:cardElevation="8dp"-->
+
+<!--            app:cardBackgroundColor="#C8E6C9">-->
+
+
+
+<!--            <LinearLayout-->
+
+<!--                android:layout_width="match_parent"-->
+
+<!--                android:layout_height="match_parent"-->
+
+<!--                android:gravity="center_vertical"-->
+
+<!--                android:padding="15dp"-->
+
+<!--                android:orientation="horizontal">-->
+
+
+
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+
+<!--                    android:layout_width="85dp"-->
+
+<!--                    android:layout_height="85dp"-->
+
+<!--                    app:lottie_autoPlay="true"-->
+
+<!--                    app:lottie_loop="true"-->
+
+<!--                    app:lottie_rawRes="@raw/purchase"/>-->
+
+
+
+<!--                <LinearLayout-->
+
+<!--                    android:layout_width="0dp"-->
+
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:layout_weight="1"-->
+
+<!--                    android:layout_marginStart="20dp"-->
+
+<!--                    android:orientation="vertical">-->
+
+
+
+<!--                    <TextView-->
+
+<!--                        android:text="Purchase"-->
+
+<!--                        android:textColor="#163A27"-->
+
+<!--                        android:textSize="20sp"-->
+
+<!--                        android:textStyle="bold"-->
+
+<!--                        android:layout_width="wrap_content"-->
+
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+
+<!--                    <TextView-->
+
+<!--                        android:text="Add New Purchase Entry"-->
+
+<!--                        android:textColor="#557064"-->
+
+<!--                        android:textSize="14sp"-->
+
+<!--                        android:layout_width="wrap_content"-->
+
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <!-- FARMER DETAILS CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            app:cardCornerRadius="25dp"
+
+            app:cardElevation="7dp"
+
+            app:cardBackgroundColor="#FFFFFF">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="18dp">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/crop_supplier_details"
+                    android:textColor="#1B4332"
+
+                    android:textSize="19sp"
+
+                    android:textStyle="bold"/>
+
+
+
+
+                <EditText
+
+                    android:id="@+id/etFarmerName"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:hint="@string/enter_supplier_name"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+
+
+
+                <EditText
+
+                    android:id="@+id/etMobile"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:hint="@string/enter_mobile_number"
+                    android:inputType="phone"
+
+                    android:maxLength="10"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <!-- PURCHASE DETAILS CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            app:cardCornerRadius="25dp"
+
+            app:cardElevation="7dp"
+
+            app:cardBackgroundColor="#FFFFFF">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="18dp">
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/purchase_details"
+
+                    android:textColor="#145A32"
+
+                    android:textSize="19sp"
+
+                    android:textStyle="bold"/>
+
+
+
+
+                <Spinner
+
+                    android:id="@+id/spCrop"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+                    android:popupBackground="@drawable/spinner_bg"
+                    android:dropDownVerticalOffset="6dp"/>
+
+
+
+
+
+                <TextView
+
+                    android:id="@+id/txtOtherCrop"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="@string/other_crop_name"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"
+
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+
+                    android:visibility="gone" />
+
+
+
+
+                <EditText
+
+                    android:id="@+id/etOtherCrop"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:hint="@string/enter_crop_name"
+
+                    android:inputType="textCapWords|textNoSuggestions"
+
+                    android:maxLength="30"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:visibility="gone"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+                <!-- QUANTITY -->
+
+                <EditText
+                    android:id="@+id/etQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:hint="@string/quantity_kg"
+
+                    android:inputType="number"
+
+                    android:maxLength="3"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+
+
+                <!-- RATE -->
+
+                <EditText
+                    android:id="@+id/etRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:hint="@string/rate_per_kg"
+
+                    android:inputType="number"
+
+                    android:maxLength="4"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+
+
+                <!-- TOTAL AMOUNT CARD -->
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="90dp"
+
+                    android:layout_marginTop="18dp"
+
+                    app:cardCornerRadius="20dp"
+
+                    app:cardElevation="5dp"
+
+                    app:cardBackgroundColor="#E8F5E9">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+
+                        android:gravity="center_vertical"
+
+                        android:padding="15dp">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/total_amount"
+
+                            android:textSize="15sp"
+
+                            android:textStyle="bold"
+
+                            android:textColor="#555555"/>
+
+
+                        <EditText
+
+                            android:id="@+id/etTotal"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="40dp"
+
+                            android:hint="@string/auto_calculated"
+
+                            android:textSize="20sp"
+
+                            android:textStyle="bold"
+
+                            android:textColor="#145A32"
+
+                            android:enabled="false"
+
+                            android:background="@null"/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <!-- PAYMENT METHOD -->
+
+
+                <Spinner
+
+                    android:id="@+id/spPaymentMethod"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="18dp"
+
+                    android:background="@drawable/edittext_bg"
+                    android:popupBackground="@drawable/spinner_bg"
+                    android:dropDownVerticalOffset="6dp"/>
+
+
+
+                <!-- DATE -->
+
+
+                <EditText
+
+                    android:id="@+id/etDate"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="55dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:hint="@string/purchase_date"
+
+                    android:enabled="false"
+
+                    android:focusable="false"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+
+                    android:textColor="#145A32"/>
+
+
+
+                <!-- REMARKS -->
+
+
+                <EditText
+
+                    android:id="@+id/etRemarks"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="80dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:gravity="top"
+
+                    android:hint="@string/remarks_optional"
+
+                    android:padding="14dp"
+
+                    android:background="@drawable/edittext_bg"
+
+                    android:textColorHint="#6B7C85"
+                    android:textColor="#263238"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- SAVE BUTTON -->
+
+
+        <Button
+
+            android:id="@+id/btnSavePurchase"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="58dp"
+
+            android:layout_marginTop="25dp"
+
+            android:layout_marginBottom="30dp"
+
+            android:text="@string/save_purchase"
+
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#FFFFFF"
+
+            android:backgroundTint="#145A32"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

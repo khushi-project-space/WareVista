@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#DDEFE5"
+
+    android:fillViewport="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp"
+
+        android:gravity="center_horizontal">
+
+
+        <!-- ================================================ -->
+        <!-- SUCCESS ICON -->
+        <!-- ================================================ -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:text="🎉"
+
+            android:textSize="70sp"/>
+
+
+        <!-- ================================================ -->
+        <!-- TITLE -->
+        <!-- ================================================ -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:text="Payment Successful!"
+
+            android:textColor="#145A32"
+
+            android:textSize="26sp"
+
+            android:textStyle="bold"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:gravity="center"
+
+            android:text="Your subscription payment was successful"
+
+            android:textColor="#557064"
+
+            android:textSize="15sp"/>
+
+
+        <!-- ================================================ -->
+        <!-- SUBSCRIPTION DETAILS CARD -->
+        <!-- ================================================ -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardBackgroundColor="#FFFFFF"
+
+            app:cardCornerRadius="25dp"
+
+            app:cardElevation="8dp"
+
+            app:strokeColor="#C8E6C9"
+
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="22dp">
+
+
+                <!-- CARD TITLE -->
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="📦 Subscription Details"
+
+                    android:textColor="#145A32"
+
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"/>
+
+
+                <!-- DIVIDER -->
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginBottom="15dp"
+
+                    android:background="#DDEFE5"/>
+
+
+                <!-- PLAN -->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+
+                    android:layout_marginBottom="15dp">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Plan"
+
+                        android:textColor="#557064"
+
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+
+                        android:id="@+id/txtPlan"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="GOLD"
+
+                        android:textColor="#145A32"
+
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+                <!-- DURATION -->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:layout_marginBottom="15dp">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Duration"
+
+                        android:textColor="#557064"
+
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+
+                        android:id="@+id/txtDuration"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="MONTHLY"
+
+                        android:textColor="#145A32"
+
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+                <!-- WAREHOUSES -->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+                    android:layout_marginBottom="15dp">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Warehouses"
+
+                        android:textColor="#557064"
+
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+
+                        android:id="@+id/txtWarehouses"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="1 Warehouse(s)"
+
+                        android:textColor="#145A32"
+
+                        android:textSize="16sp"
+
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+                <!-- AMOUNT -->
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+
+
+                    android:paddingTop="10dp">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Amount Paid"
+
+                        android:textColor="#557064"
+
+                        android:textSize="16sp"/>
+
+
+                    <TextView
+
+                        android:id="@+id/txtAmount"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="₹99"
+
+                        android:textColor="#145A32"
+
+                        android:textSize="19sp"
+
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ================================================ -->
+        <!-- STATUS CARD -->
+        <!-- ================================================ -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="25dp"
+
+            app:cardBackgroundColor="#C8E6C9"
+
+            app:cardCornerRadius="20dp"
+
+            app:cardElevation="3dp">
+
+
+            <TextView
+
+                android:id="@+id/txtStatus"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="18dp"
+
+                android:gravity="center"
+
+                android:text="Payment Successful 🎉"
+
+                android:textColor="#145A32"
+
+                android:textSize="16sp"
+
+                android:textStyle="bold"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ================================================ -->
+        <!-- CONTINUE BUTTON -->
+        <!-- ================================================ -->
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnContinue"
+
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+
+            android:text="Continue to Dashboard"
+
+            android:textSize="17sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#FFFFFF"
+
+            app:backgroundTint="#145A32"
+
+            app:cornerRadius="18dp"/>
+
+
+        <!-- ================================================ -->
+        <!-- FOOTER -->
+        <!-- ================================================ -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="25dp"
+
+            android:layout_marginBottom="15dp"
+
+            android:text="Thank you for choosing WareVista 💚"
+
+            android:textColor="#557064"
+
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

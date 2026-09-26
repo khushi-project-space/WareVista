@@ -1,0 +1,237 @@
+<resources>
+    <string name="app_name">WareVista</string>
+
+    <string-array name="crop_list">
+        <item>Select Crop</item>
+        <item>Wheat (गेहूं)</item>
+        <item>Rice (Paddy) (धान)</item>
+        <item>Corn (मक्का)</item>
+        <item>Millet - Bajra (बाजरा)</item>
+        <item>Soybean (सोयाबीन)</item>
+        <item>Cotton (कपास)</item>
+        <item>Sugarcane (गन्ना)</item>
+        <item>Potato (आलू)</item>
+        <item>Groundnut (मूंगफली)</item>
+        <item>Tomato (टमाटर)</item>
+        <item>Other (अन्य)</item>
+    </string-array>
+
+    <string-array name="payment_method_list">
+        <item>Select Payment Method</item>
+        <item>Cash</item>
+        <item>Online</item>
+    </string-array>
+
+    <string name="language">Language</string>
+
+    <string name="english">English</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="hindi">हिन्दी</string>
+
+    <string name="purchase">Purchase</string>
+    <string name="sales">Sales</string>
+    <string name="live_stock">Live Stock</string>
+    <string name="history">History</string>
+    <string name="reports">Reports</string>
+    <string name="logout">Logout</string>
+
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="warehouse">Warehouse</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="close">Close</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <string-array name="language_options">
+        <item>English</item>
+        <item>ગુજરાતી</item>
+        <item>हिन्दी</item>
+    </string-array>
+
+
+    <string name="enter_user_id">👤 Enter User ID</string>
+    <string name="enter_password">🔐 Enter Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="signing_in">Signing In...</string>
+    <string name="error_enter_user_id">Enter User ID</string>
+    <string name="error_enter_password">Enter Password</string>
+    <string name="invalid_user_password">Invalid User ID or Password</string>
+    <string name="invalid_server_response">Invalid Server Response</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="warevista_logo_description">WareVista Logo</string>
+    <string name="warevista_footer">© WareVista</string>
+
+    <string name="admin_dashboard">👑 Admin Dashboard</string>
+    <string name="manage_warehouse_system">Manage your warehouse system</string>
+
+    <string name="create_warehouse">Create Warehouse</string>
+    <string name="create_warehouse_staff">Create warehouse and staff account</string>
+
+    <string name="manage_staff">Manage Staff</string>
+    <string name="view_manage_staff">View and manage warehouse staff</string>
+
+    <string name="subscription">Subscription</string>
+    <string name="manage_subscription">Manage warehouse subscription plans</string>
+
+    <string name="sign_out_securely">Sign Out Securely</string>
+
+    <string name="active">● ACTIVE</string>
+    <string name="current_plan">Current Plan</string>
+    <string name="monthly">Monthly</string>
+
+    <string name="checking">Checking...</string>
+    <string name="connection_error_retry">Connection Error. Please try again.</string>
+    <string name="user_session_not_found">User session not found. Please login again.</string>
+
+    <string name="warehouse_limit_reached">🚫 Warehouse Limit Reached</string>
+    <string name="view_subscription">View Subscription</string>
+
+    <string name="add_new_purchase">Add New Purchase Entry</string>
+    <string name="add_new_sales">Add New Sales Entry</string>
+    <string name="live_warehouse_inventory">Live Warehouse Inventory</string>
+    <string name="view_transaction_history">View Transaction History</string>
+
+    <string name="warehouse_label">📍 Warehouse : </string>
+    <string name="date_label">📅 </string>
+
+    <string name="locked_history_message">🔒 History is available in GOLD or PLATINUM plan.</string>
+    <string name="locked_live_stock_message">🔒 Live Stock is available in PLATINUM plan.</string>
+    <string name="locked_feature_message">🔒 This feature is not available for your plan.</string>
+    <string name="locked_plan_feature_message">🔒 %1$s is not available for your plan.</string>
+
+    <string name="purchase_title">Purchase</string>
+    <string name="crop_supplier_details">🤝 Crop Supplier Details</string>
+    <string name="enter_supplier_name">Enter Supplier Name</string>
+    <string name="enter_mobile_number">📱 Enter Mobile Number</string>
+
+    <string name="purchase_details">🌾 Purchase Details</string>
+    <string name="other_crop_name">Other Crop Name</string>
+    <string name="enter_crop_name">Enter Crop Name</string>
+    <string name="quantity_kg">⚖ Quantity (KG)</string>
+    <string name="rate_per_kg">💰 Rate (₹ / KG)</string>
+
+    <string name="total_amount">🧮 Total Amount</string>
+    <string name="auto_calculated">Auto Calculated</string>
+
+    <string name="purchase_date">📅 Purchase Date</string>
+    <string name="remarks_optional">📝 Remarks (Optional)</string>
+    <string name="save_purchase">SAVE PURCHASE</string>
+    <string name="saving">Saving...</string>
+
+    <string name="enter_farmer_name">Enter Farmer Name</string>
+    <string name="only_alphabets_allowed">Only alphabets allowed</string>
+    <string name="enter_mobile">Enter Mobile Number</string>
+    <string name="valid_10_digit_number">Enter valid 10 digit number</string>
+    <string name="please_select_crop">Please Select Crop</string>
+    <string name="quantity_required">Enter Quantity</string>
+    <string name="maximum_500_kg">Maximum 500 KG allowed</string>
+    <string name="quantity_1_500">Quantity 1-500 KG allowed</string>
+    <string name="enter_rate">Enter Rate</string>
+    <string name="maximum_1000">Maximum ₹1000 allowed</string>
+    <string name="rate_1_1000">Rate ₹1-₹1000 allowed</string>
+    <string name="please_select_payment">Please Select Payment Method</string>
+
+    <string name="purchase_saved_successfully">Purchase Saved Successfully</string>
+    <string name="server_error">Server Error</string>
+
+    <string name="sales_title">Sales</string>
+    <string name="customer_details">🤝 Customer Details</string>
+    <string name="enter_buyer_name">Enter Buyer Name</string>
+    <string name="sales_details">🌾 Sales Details</string>
+    <string name="available_stock">📦 Available Stock : %1$d KG</string>
+    <string name="sale_date">📅 Sale Date</string>
+    <string name="save_sales">SAVE SALES</string>
+
+    <string name="enter_buyer">Enter Buyer Name</string>
+    <string name="enter_mobile_sales">Enter Mobile Number</string>
+    <string name="valid_mobile_sales">Enter valid 10 digit number</string>
+    <string name="please_select_crop_sales">Please Select Crop</string>
+    <string name="enter_quantity_sales">Enter Quantity</string>
+    <string name="invalid_quantity">Invalid Quantity</string>
+    <string name="quantity_greater_zero">Quantity must be greater than 0</string>
+    <string name="maximum_500_kg_sales">Maximum 500 KG allowed</string>
+    <string name="stock_not_available">Stock Not Available</string>
+    <string name="enter_rate_sales">Enter Rate</string>
+    <string name="invalid_rate">Invalid Rate</string>
+    <string name="rate_greater_zero">Rate must be greater than 0</string>
+    <string name="maximum_1000_sales">Maximum ₹1000 allowed</string>
+    <string name="enter_valid_rate">Enter valid rate</string>
+    <string name="please_select_payment_sales">Please select payment method</string>
+    <string name="invalid_total_amount">Invalid total amount</string>
+
+    <string name="loading_crops">⏳ Loading crops...</string>
+    <string name="failed_load_crops">⚠️ Failed to load crops</string>
+    <string name="unable_load_crop_list">Unable to load crop list</string>
+
+    <string name="saving_sales">Saving...</string>
+    <string name="creating_qr">Creating QR...</string>
+    <string name="waiting_demo_payment">Waiting for Demo Payment...</string>
+    <string name="saving_sale">Saving Sale...</string>
+
+    <string name="qr_url_error">QR URL Error</string>
+    <string name="demo_qr_creation_failed">Demo QR creation failed</string>
+    <string name="payment_id_not_received">Payment ID not received</string>
+    <string name="payment_url_not_received">Payment URL not received</string>
+    <string name="invalid_demo_qr_response">Invalid Demo QR response</string>
+    <string name="demo_qr_connection_failed">Demo QR connection failed</string>
+    <string name="qr_generation_failed">QR generation failed</string>
+
+    <string name="demo_payment_title">WareVista Demo Payment</string>
+    <string name="scan_qr_to_pay">Scan QR to Pay ₹%1$s</string>
+    <string name="demo_payment_id">Demo Payment ID:\n%1$s</string>
+
+
+    <string name="sales_save_failed">Sales save failed</string>
+    <string name="sales_saved_successfully">Sales Saved Successfully</string>
+    <string name="download_bill">Download Bill</string>
+    <string name="download_bill_question">Do you want to download bill PDF?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="bill_pdf_generation">Bill PDF generation</string>
+
+    <string name="stock_loading_error">❌ Stock Loading Error</string>
+    <string name="stock_not_available_display">❌ Stock Not Available</string>
+
+    <string name="select_crop">Select Crop</string>
+
+    <string name="live_stock_title">Live Stock</string>
+    <string name="available_stock_label">Available Stock</string>
+    <string name="total_stock">Total Stock</string>
+    <string name="purchased">📥 Purchased</string>
+    <string name="sold">📤 Sold</string>
+    <string name="available">📦 Available</string>
+    <string name="crop_stock">Crop Stock</string>
+    <string name="stock_insights">Stock Insights</string>
+    <string name="highest_stock">Highest Stock</string>
+    <string name="live_stock_analysis">● Live Stock Analysis</string>
+    <string name="no_records_selected_crop">No Records for selected crop</string>
+    <string name="failed_load_stock_data">Failed to load stock data</string>
+    <string name="unable_load_stock_data">Unable to load stock data</string>
+    <string name="lowest_stock">Lowest Stock</string>
+    <string name="fast_moving">Fast Moving</string>
+    <string name="out_of_stock">Out Of Stock</string>
+    <string name="kg_sold">KG Sold</string>
+    <string name="is_out_of_stock">is Out Of Stock</string>
+    <string name="all_crops_available">All Crops Available</string>
+    <string name="history_title">History</string>
+    <string name="history_overview">📊 History Overview</string>
+    <string name="total_records">Total Records</string>
+    <string name="today_records">Today Records</string>
+    <string name="manage_history">📚 Manage History</string>
+
+    <string name="purchase_history">📥 Purchase History</string>
+    <string name="sales_history">📤 Sales History</string>
+    <string name="view_all_purchase_records">View all purchase records</string>
+    <string name="view_all_sales_records">View all sales records</string>
+    <string name="total">Total</string>
+    <string name="today">Today</string>
+
+</resources>

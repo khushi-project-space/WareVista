@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <string name="app_name">WareVista</string>
+
+        <string name="language">ભાષા</string>
+
+        <string name="english">English</string>
+        <string name="gujarati">ગુજરાતી</string>
+        <string name="hindi">હિન્દી</string>
+
+        <string name="purchase">ખરીદી</string>
+        <string name="sales">વેચાણ</string>
+        <string name="live_stock">લાઇવ સ્ટોક</string>
+        <string name="history">ઇતિહાસ</string>
+        <string name="reports">રિપોર્ટ્સ</string>
+        <string name="logout">લૉગઆઉટ</string>
+
+        <string name="login">લૉગિન</string>
+        <string name="username">યુઝરનેમ</string>
+        <string name="password">પાસવર્ડ</string>
+        <string name="mobile">મોબાઇલ</string>
+        <string name="warehouse">વેરહાઉસ</string>
+
+        <string name="save">સેવ</string>
+        <string name="cancel">રદ કરો</string>
+        <string name="delete">ડિલીટ</string>
+        <string name="update">અપડેટ</string>
+        <string name="submit">સબમિટ</string>
+        <string name="close">બંધ કરો</string>
+        <string name="next">આગળ</string>
+        <string name="back">પાછળ</string>
+
+    <string name="enter_user_id">👤 યુઝર ID દાખલ કરો</string>
+    <string name="enter_password">🔐 પાસવર્ડ દાખલ કરો</string>
+    <string name="sign_in">લૉગિન કરો</string>
+    <string name="signing_in">લૉગિન થઈ રહ્યું છે...</string>
+    <string name="error_enter_user_id">યુઝર ID દાખલ કરો</string>
+    <string name="error_enter_password">પાસવર્ડ દાખલ કરો</string>
+    <string name="invalid_user_password">અમાન્ય યુઝર ID અથવા પાસવર્ડ</string>
+    <string name="invalid_server_response">સર્વર તરફથી અમાન્ય પ્રતિસાદ</string>
+    <string name="connection_error">કનેક્શનની સમસ્યા</string>
+    <string name="warevista_logo_description">WareVista લોગો</string>
+    <string name="warevista_footer">© WareVista</string>
+
+    <string name="admin_dashboard">👑 એડમિન ડેશબોર્ડ</string>
+    <string name="manage_warehouse_system">તમારી વેરહાઉસ સિસ્ટમ મેનેજ કરો</string>
+
+    <string name="create_warehouse">વેરહાઉસ બનાવો</string>
+    <string name="create_warehouse_staff">વેરહાઉસ અને સ્ટાફ એકાઉન્ટ બનાવો</string>
+
+    <string name="manage_staff">સ્ટાફ મેનેજ કરો</string>
+    <string name="view_manage_staff">વેરહાઉસ સ્ટાફ જુઓ અને મેનેજ કરો</string>
+
+    <string name="subscription">સબ્સ્ક્રિપ્શન</string>
+    <string name="manage_subscription">વેરહાઉસ સબ્સ્ક્રિપ્શન પ્લાન મેનેજ કરો</string>
+
+    <string name="sign_out_securely">સુરક્ષિત રીતે લૉગઆઉટ કરો</string>
+
+    <string name="active">● સક્રિય</string>
+    <string name="current_plan">વર્તમાન પ્લાન</string>
+    <string name="monthly">માસિક</string>
+
+    <string name="checking">ચેક થઈ રહ્યું છે...</string>
+    <string name="connection_error_retry">કનેક્શનની સમસ્યા. ફરી પ્રયાસ કરો.</string>
+    <string name="user_session_not_found">યુઝર સેશન મળ્યું નથી. ફરી લૉગિન કરો.</string>
+
+    <string name="warehouse_limit_reached">🚫 વેરહાઉસ મર્યાદા પૂર્ણ થઈ</string>
+    <string name="view_subscription">સબ્સ્ક્રિપ્શન જુઓ</string>
+
+    <string name="add_new_purchase">નવી ખરીદી એન્ટ્રી ઉમેરો</string>
+    <string name="add_new_sales">નવી વેચાણ એન્ટ્રી ઉમેરો</string>
+    <string name="live_warehouse_inventory">લાઇવ વેરહાઉસ ઇન્વેન્ટરી</string>
+    <string name="view_transaction_history">ટ્રાન્ઝેક્શન ઇતિહાસ જુઓ</string>
+
+    <string name="warehouse_label">📍 વેરહાઉસ : </string>
+    <string name="date_label">📅 </string>
+
+    <string name="locked_history_message">🔒 ઇતિહાસ GOLD અથવા PLATINUM પ્લાનમાં ઉપલબ્ધ છે.</string>
+    <string name="locked_live_stock_message">🔒 લાઇવ સ્ટોક PLATINUM પ્લાનમાં ઉપલબ્ધ છે.</string>
+    <string name="locked_feature_message">🔒 આ ફીચર તમારા પ્લાનમાં ઉપલબ્ધ નથી.</string>
+    <string name="locked_plan_feature_message">🔒 %1$s તમારા પ્લાનમાં ઉપલબ્ધ નથી.</string>
+
+    <string name="purchase_title">ખરીદી</string>
+    <string name="crop_supplier_details">🤝 પાક સપ્લાયર વિગતો</string>
+    <string name="enter_supplier_name">સપ્લાયરનું નામ દાખલ કરો</string>
+    <string name="enter_mobile_number">📱 મોબાઇલ નંબર દાખલ કરો</string>
+
+    <string name="purchase_details">🌾 ખરીદીની વિગતો</string>
+    <string name="other_crop_name">અન્ય પાકનું નામ</string>
+    <string name="enter_crop_name">પાકનું નામ દાખલ કરો</string>
+    <string name="quantity_kg">⚖ જથ્થો (KG)</string>
+    <string name="rate_per_kg">💰 દર (₹ / KG)</string>
+
+    <string name="total_amount">🧮 કુલ રકમ</string>
+    <string name="auto_calculated">આપમેળે ગણતરી</string>
+
+    <string name="purchase_date">📅 ખરીદી તારીખ</string>
+    <string name="remarks_optional">📝 નોંધ (વૈકલ્પિક)</string>
+    <string name="save_purchase">ખરીદી સેવ કરો</string>
+    <string name="saving">સેવ થઈ રહ્યું છે...</string>
+
+    <string name="enter_farmer_name">ખેડૂતનું નામ દાખલ કરો</string>
+    <string name="only_alphabets_allowed">માત્ર અક્ષરો માન્ય છે</string>
+    <string name="enter_mobile">મોબાઇલ નંબર દાખલ કરો</string>
+    <string name="valid_10_digit_number">માન્ય 10 અંકનો નંબર દાખલ કરો</string>
+    <string name="please_select_crop">કૃપા કરીને પાક પસંદ કરો</string>
+    <string name="quantity_required">જથ્થો દાખલ કરો</string>
+    <string name="maximum_500_kg">મહત્તમ 500 KG માન્ય છે</string>
+    <string name="quantity_1_500">જથ્થો 1-500 KG હોવો જોઈએ</string>
+    <string name="enter_rate">દર દાખલ કરો</string>
+    <string name="maximum_1000">મહત્તમ ₹1000 માન્ય છે</string>
+    <string name="rate_1_1000">દર ₹1-₹1000 હોવો જોઈએ</string>
+    <string name="please_select_payment">કૃપા કરીને ચુકવણી પદ્ધતિ પસંદ કરો</string>
+
+    <string name="purchase_saved_successfully">ખરીદી સફળતાપૂર્વક સેવ થઈ</string>
+    <string name="server_error">સર્વર ભૂલ</string>
+
+    <string name="sales_title">વેચાણ</string>
+    <string name="customer_details">🤝 ગ્રાહકની વિગતો</string>
+    <string name="enter_buyer_name">ખરીદદારનું નામ દાખલ કરો</string>
+    <string name="sales_details">🌾 વેચાણની વિગતો</string>
+    <string name="available_stock">📦 ઉપલબ્ધ સ્ટોક : %1$d KG</string>
+    <string name="sale_date">📅 વેચાણ તારીખ</string>
+    <string name="save_sales">વેચાણ સેવ કરો</string>
+
+    <string name="enter_buyer">ખરીદદારનું નામ દાખલ કરો</string>
+    <string name="enter_mobile_sales">મોબાઇલ નંબર દાખલ કરો</string>
+    <string name="valid_mobile_sales">માન્ય 10 અંકનો નંબર દાખલ કરો</string>
+    <string name="please_select_crop_sales">કૃપા કરીને પાક પસંદ કરો</string>
+    <string name="enter_quantity_sales">જથ્થો દાખલ કરો</string>
+    <string name="invalid_quantity">અમાન્ય જથ્થો</string>
+    <string name="quantity_greater_zero">જથ્થો 0 કરતાં વધારે હોવો જોઈએ</string>
+    <string name="maximum_500_kg_sales">મહત્તમ 500 KG માન્ય છે</string>
+    <string name="stock_not_available">સ્ટોક ઉપલબ્ધ નથી</string>
+    <string name="enter_rate_sales">દર દાખલ કરો</string>
+    <string name="invalid_rate">અમાન્ય દર</string>
+    <string name="rate_greater_zero">દર 0 કરતાં વધારે હોવો જોઈએ</string>
+    <string name="maximum_1000_sales">મહત્તમ ₹1000 માન્ય છે</string>
+    <string name="enter_valid_rate">માન્ય દર દાખલ કરો</string>
+    <string name="please_select_payment_sales">કૃપા કરીને ચુકવણી પદ્ધતિ પસંદ કરો</string>
+    <string name="invalid_total_amount">અમાન્ય કુલ રકમ</string>
+
+    <string name="loading_crops">⏳ પાક લોડ થઈ રહ્યા છે...</string>
+    <string name="failed_load_crops">⚠️ પાક લોડ કરવામાં નિષ્ફળ</string>
+    <string name="unable_load_crop_list">પાકની યાદી લોડ થઈ શકી નથી</string>
+
+    <string name="saving_sales">સેવ થઈ રહ્યું છે...</string>
+    <string name="creating_qr">QR બનાવવામાં આવી રહ્યું છે...</string>
+    <string name="waiting_demo_payment">ડેમો પેમેન્ટની રાહ જોવાઈ રહી છે...</string>
+    <string name="saving_sale">વેચાણ સેવ થઈ રહ્યું છે...</string>
+
+    <string name="qr_url_error">QR URL ભૂલ</string>
+    <string name="demo_qr_creation_failed">ડેમો QR બનાવવામાં નિષ્ફળ</string>
+    <string name="payment_id_not_received">પેમેન્ટ ID મળ્યું નથી</string>
+    <string name="payment_url_not_received">પેમેન્ટ URL મળ્યું નથી</string>
+    <string name="invalid_demo_qr_response">અમાન્ય ડેમો QR પ્રતિસાદ</string>
+    <string name="demo_qr_connection_failed">ડેમો QR કનેક્શન નિષ્ફળ</string>
+    <string name="qr_generation_failed">QR બનાવવામાં નિષ્ફળ</string>
+
+    <string name="demo_payment_title">WareVista ડેમો પેમેન્ટ</string>
+    <string name="scan_qr_to_pay">પેમેન્ટ માટે QR સ્કેન કરો ₹%1$s</string>
+    <string name="demo_payment_id">ડેમો પેમેન્ટ ID:\n%1$s</string>
+
+    <string name="sales_save_failed">વેચાણ સેવ કરવામાં નિષ્ફળ</string>
+    <string name="sales_saved_successfully">વેચાણ સફળતાપૂર્વક સેવ થયું</string>
+    <string name="download_bill">બિલ ડાઉનલોડ કરો</string>
+    <string name="download_bill_question">શું તમે બિલ PDF ડાઉનલોડ કરવા માંગો છો?</string>
+    <string name="yes">હા</string>
+    <string name="no">ના</string>
+    <string name="bill_pdf_generation">બિલ PDF બનાવવું</string>
+
+    <string name="stock_loading_error">❌ સ્ટોક લોડ કરવામાં ભૂલ</string>
+    <string name="stock_not_available_display">❌ સ્ટોક ઉપલબ્ધ નથી</string>
+
+    <string name="select_crop">પાક પસંદ કરો</string>
+
+    <string name="live_stock_title">લાઈવ સ્ટોક</string>
+    <string name="available_stock_label">ઉપલબ્ધ સ્ટોક</string>
+    <string name="total_stock">કુલ સ્ટોક</string>
+    <string name="purchased">📥 ખરીદેલ</string>
+    <string name="sold">📤 વેચાયેલ</string>
+    <string name="available">📦 ઉપલબ્ધ</string>
+    <string name="crop_stock">પાકનો સ્ટોક</string>
+    <string name="stock_insights">સ્ટોકની માહિતી</string>
+    <string name="highest_stock">સૌથી વધુ સ્ટોક</string>
+    <string name="live_stock_analysis">● લાઈવ સ્ટોક વિશ્લેષણ</string>
+    <string name="no_records_selected_crop">પસંદ કરેલા પાક માટે કોઈ રેકોર્ડ નથી</string>
+    <string name="failed_load_stock_data">સ્ટોક ડેટા લોડ કરવામાં નિષ્ફળતા</string>
+    <string name="unable_load_stock_data">સ્ટોક ડેટા લોડ કરી શકાયો નથી</string>
+    <string name="lowest_stock">સૌથી ઓછો સ્ટોક</string>
+    <string name="fast_moving">ઝડપથી વેચાતો</string>
+    <string name="out_of_stock">સ્ટોક સમાપ્ત</string>
+    <string name="kg_sold">કિલો વેચાયેલ</string>
+    <string name="is_out_of_stock">સ્ટોક સમાપ્ત છે</string>
+    <string name="all_crops_available">બધા પાક ઉપલબ્ધ છે</string>
+    <string name="history_title">હિસ્ટ્રી</string>
+    <string name="history_overview">📊 હિસ્ટ્રી ઓવરવ્યૂ</string>
+    <string name="total_records">કુલ રેકોર્ડ</string>
+    <string name="today_records">આજના રેકોર્ડ</string>
+    <string name="manage_history">📚 હિસ્ટ્રી મેનેજ કરો</string>
+
+    <string name="purchase_history">📥 ખરીદીની હિસ્ટ્રી</string>
+    <string name="sales_history">📤 વેચાણની હિસ્ટ્રી</string>
+    <string name="view_all_purchase_records">બધા ખરીદીના રેકોર્ડ જુઓ</string>
+    <string name="view_all_sales_records">બધા વેચાણના રેકોર્ડ જુઓ</string>
+    <string name="total">કુલ</string>
+    <string name="today">આજે</string>
+
+
+</resources>

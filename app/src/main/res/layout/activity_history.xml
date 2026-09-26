@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#DDEFE5"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- ===================================================== -->
+        <!-- HEADER CARD -->
+        <!-- ===================================================== -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="7dp"
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+
+                <ImageView
+
+                    android:id="@+id/btnBack"
+
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+
+                    android:padding="7dp"
+
+                    android:background="@drawable/back_button_bg"
+
+                    android:src="@drawable/ic_back"
+
+                    app:tint="#145A32" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:id="@+id/lottieHistory"
+
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+
+                    android:layout_marginStart="15dp"
+
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/history" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:text="@string/history_title"
+
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    android:textColor="#145A32" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ===================================================== -->
+        <!-- SUMMARY TITLE -->
+        <!-- ===================================================== -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/history_overview"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textColor="#145A32"
+
+            android:layout_marginTop="20dp" />
+
+
+        <!-- ===================================================== -->
+        <!-- SUMMARY ROW 1 -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <!-- ================================================= -->
+            <!-- TOTAL RECORD CARD -->
+            <!-- ================================================= -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#C8E6C9">
+
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!-- ACTUAL CONTENT -->
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/lottieInventory"
+
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+
+                            android:scaleX="1.3"
+                            android:scaleY="1.3"
+
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/inventory" />
+
+
+                        <TextView
+
+                            android:text="@string/total_records"
+
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtTotalRecords"
+
+                            android:text=""
+
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- FULL CARD SKELETON -->
+
+                    <LinearLayout
+
+                        android:id="@+id/skeletonTotalRecords"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:background="#C8E6C9">
+
+
+                        <View
+
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/skeleton_circle" />
+
+
+                        <View
+
+                            android:layout_width="105dp"
+                            android:layout_height="16dp"
+
+                            android:layout_marginTop="10dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="65dp"
+                            android:layout_height="25dp"
+
+                            android:layout_marginTop="8dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- ================================================= -->
+            <!-- TODAY RECORD CARD -->
+            <!-- ================================================= -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#C8E6C9">
+
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!-- ACTUAL -->
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/lottieCalendar"
+
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+
+                            android:scaleX="1.3"
+                            android:scaleY="1.3"
+
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/calender" />
+
+
+                        <TextView
+
+                            android:text="@string/today_records"
+
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtTodayRecords"
+
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- FULL CARD SKELETON -->
+
+                    <LinearLayout
+
+                        android:id="@+id/skeletonTodayRecords"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:background="#C8E6C9">
+
+
+                        <View
+
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+
+                            android:background="@drawable/skeleton_circle" />
+
+
+                        <View
+
+                            android:layout_width="105dp"
+                            android:layout_height="16dp"
+
+                            android:layout_marginTop="10dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="65dp"
+                            android:layout_height="25dp"
+
+                            android:layout_marginTop="8dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- SUMMARY ROW 2 -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <!-- ================================================= -->
+            <!-- PURCHASE CARD -->
+            <!-- ================================================= -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#C8E6C9">
+
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!-- ACTUAL CONTENT -->
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/lottiePurchase"
+
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+
+                            android:scaleX="1.3"
+                            android:scaleY="1.3"
+
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/purchase1" />
+
+
+                        <TextView
+
+                            android:text="@string/purchase"
+
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtPurchaseRecords"
+
+                            android:text="Total "
+
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtPurchaseToday"
+
+                            android:text="Today "
+
+                            android:textColor="#557064"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- FULL CARD SKELETON -->
+
+                    <LinearLayout
+
+                        android:id="@+id/skeletonPurchase"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:background="#C8E6C9">
+
+
+                        <View
+
+                            android:layout_width="55dp"
+                            android:layout_height="35dp"
+
+                            android:background="@drawable/skeleton_circle" />
+
+
+                        <View
+
+                            android:layout_width="80dp"
+                            android:layout_height="16dp"
+
+                            android:layout_marginTop="10dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="90dp"
+                            android:layout_height="13dp"
+
+                            android:layout_marginTop="8dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="13dp"
+
+                            android:layout_marginTop="6dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- ================================================= -->
+            <!-- SALES CARD -->
+            <!-- ================================================= -->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="155dp"
+
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+
+                app:cardCornerRadius="22dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#C8E6C9">
+
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!-- ACTUAL CONTENT -->
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/lottieSales"
+
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+
+                            android:scaleX="1.3"
+                            android:scaleY="1.3"
+
+                            android:layout_marginBottom="8dp"
+
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/salesq" />
+
+
+                        <TextView
+
+                            android:text="@string/sales"
+
+                            android:textStyle="bold"
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="2dp" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtSalesRecords"
+
+                            android:text="Total "
+
+                            android:textColor="#145A32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+
+                            android:id="@+id/txtSalesToday"
+
+                            android:text="Today "
+
+                            android:textColor="#557064"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <!-- FULL CARD SKELETON -->
+
+                    <LinearLayout
+
+                        android:id="@+id/skeletonSales"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        android:background="#C8E6C9">
+
+
+                        <View
+
+                            android:layout_width="55dp"
+                            android:layout_height="35dp"
+
+                            android:background="@drawable/skeleton_circle" />
+
+
+                        <View
+
+                            android:layout_width="70dp"
+                            android:layout_height="16dp"
+
+                            android:layout_marginTop="10dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="90dp"
+                            android:layout_height="13dp"
+
+                            android:layout_marginTop="8dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                        <View
+
+                            android:layout_width="75dp"
+                            android:layout_height="13dp"
+
+                            android:layout_marginTop="6dp"
+
+                            android:background="@drawable/skeleton_rounded" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- HISTORY MENU TITLE -->
+        <!-- ===================================================== -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/manage_history"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textColor="#145A32"
+
+            android:layout_marginTop="18dp" />
+
+
+        <!-- ===================================================== -->
+        <!-- PURCHASE HISTORY -->
+        <!-- ===================================================== -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardPurchaseHistory"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="12dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:text="@string/purchase_history"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:textColor="#145A32"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+
+                    android:text="@string/view_all_purchase_records"
+
+                    android:textColor="#607D68"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ===================================================== -->
+        <!-- SALES HISTORY -->
+        <!-- ===================================================== -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardSalesHistory"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="22dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:text="@string/sales_history"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:textColor="#145A32"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+
+                    android:text="@string/view_all_sales_records"
+
+                    android:textColor="#607D68"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

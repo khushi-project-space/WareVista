@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEFE5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+
+        <!-- HEADER CARD -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="140dp"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="30dp"
+
+            app:cardElevation="10dp"
+
+            app:cardBackgroundColor="#145A32">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:padding="12dp"
+
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+
+
+
+                <!-- LEFT LOTTIE -->
+
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieWarehouse"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/warehouse"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/languageCard"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="1dp"
+                        app:cardBackgroundColor="#2E7D32"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="#81C784">
+
+                        <Spinner
+                            android:id="@+id/spinnerLanguage"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:paddingStart="7dp"
+                            android:paddingEnd="2dp"
+                            android:entries="@array/language_options"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+
+
+
+                <!-- RIGHT TEXT -->
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="15dp"
+
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+
+                        android:text="WareVista"
+
+                        android:textColor="#FFFFFF"
+
+                        android:textSize="26sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+
+                        android:id="@+id/txtWarehouse"
+
+                        android:text="@string/warehouse_label"
+
+                        android:textColor="#D8F3E3"
+
+                        android:textSize="14sp"
+
+                        android:layout_marginTop="8dp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+
+                        android:id="@+id/txtDate"
+
+                        android:text="@string/date_label"
+
+                        android:textColor="#D8F3E3"
+
+                        android:textSize="14sp"
+
+                        android:layout_marginTop="5dp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <!-- PURCHASE CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardPurchase"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="14dp"
+
+            app:cardCornerRadius="28dp"
+
+            app:cardElevation="8dp"
+
+            app:cardBackgroundColor="#C8E6C9">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:orientation="horizontal">
+
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/purchase"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+
+                        android:text="@string/purchase"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+
+                        android:text="@string/add_new_purchase"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- SALES CARD -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardSales"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="14dp"
+
+            app:cardCornerRadius="28dp"
+
+            app:cardElevation="8dp"
+
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:orientation="horizontal">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/sales"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:text="@string/sales"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+
+                        android:text="@string/add_new_sales"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <!-- STOCK CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardStock"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="14dp"
+
+            app:cardCornerRadius="28dp"
+
+            app:cardElevation="8dp"
+
+            app:cardBackgroundColor="#C8E6C9">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:orientation="horizontal">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/stock"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:text="@string/live_stock"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+
+                        android:text="@string/live_warehouse_inventory"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <!-- HISTORY CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardHistory"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="14dp"
+
+            app:cardCornerRadius="28dp"
+
+            app:cardElevation="8dp"
+
+            app:cardBackgroundColor="#B2DFDB">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:orientation="horizontal">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/history"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:text="@string/history"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+
+                        android:text="@string/view_transaction_history"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- LOGOUT CARD -->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardLogout"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="28dp"
+
+            app:cardElevation="8dp"
+
+            app:cardBackgroundColor="#F8BBD0">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center_vertical"
+
+                android:padding="15dp"
+
+                android:orientation="horizontal">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:layout_width="85dp"
+
+                    android:layout_height="85dp"
+
+                    app:lottie_autoPlay="true"
+
+                    app:lottie_loop="true"
+
+                    app:lottie_rawRes="@raw/logout"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:layout_marginStart="20dp"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:text="@string/logout"
+
+                        android:textColor="#163A27"
+
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+
+                        android:text="@string/sign_out_securely"
+
+                        android:textColor="#557064"
+
+                        android:textSize="14sp"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
